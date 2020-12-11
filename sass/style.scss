@@ -1,11 +1,13 @@
 @import "config";
 @import "utilities";
 @import "form";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "JetBrains Mono", sans-serif;
   font-size: 1rem;
@@ -13,13 +15,16 @@ body {
   background-color: #fff;
   color: #333;
 }
+
 a {
   text-decoration: none;
   color: $primary-color;
 }
+
 ul {
   list-style: none;
 }
+
 img {
   width: 100%;
 }
@@ -41,6 +46,7 @@ img {
   ul {
     display: flex;
   }
+
   a {
     color: #fff;
     padding: 20px;
@@ -83,7 +89,8 @@ img {
 }
 
 /*Profile page*/
-.profile-grid {
+.profile-grid 
+{
   display: grid;
   grid-template-areas: "top top" "about about" "exp edu" "github github";
   grid-gap: 1rem;
@@ -121,12 +128,14 @@ img {
       align-items: center;
     }
   }
+
   .profile-exp {
     grid-area: exp;
   }
   .profile-edu {
     grid-area: edu;
   }
+
   .profile-exp,
   .profile-edu {
     & > div {
@@ -141,6 +150,7 @@ img {
       margin: 0.5rem 0;
     }
   }
+
   .profile-github {
     grid-area: github;
     .repo {
@@ -162,6 +172,7 @@ img {
 post-form-header {
   padding: 0.5rem;
 }
+
 .post {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -172,6 +183,7 @@ post-form-header {
   & > div:first-child {
     text-align: center;
   }
+
   img {
     width: 150px;
   }
