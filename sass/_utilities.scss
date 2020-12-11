@@ -23,10 +23,14 @@
   color: $primary-color;
 }
 
-.round-img{
+.round-img {
   border-radius: 50%;
 }
-
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -95,6 +99,29 @@
   &:hover {
     background: lighten($dark-color, 20%);
     color: #fff;
+  }
+}
+
+/*Badge*/
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: $light-color;
+  color: #333;
+
+  &.badge-primary {
+    @include set-background-color($primary-color);
+  }
+  &.badge-dark {
+    @include set-background-color($dark-color);
+  }
+  &.badge-succes {
+    @include set-background-color($success-color);
+  }
+  &.badge-danger {
+    @include set-background-color($danger-color);
   }
 }
 
